@@ -86,4 +86,19 @@ class Car {
         return engineOn;
     }
 }
+public class VehicleSimulator {
+    public static void main(String[] args) {
+        Car myCar = new Car();
+        myCar.displayStatus();
+        myCar.start();
+        myCar.accelerate();
+        myCar.refuel(5);
+        myCar.start();
+        myCar.accelerate();
+        myCar.accelerate();
+        myCar.displayStatus();
+        myCar.stop();
+        myCar.displayStatus();
+    }
+}
 
